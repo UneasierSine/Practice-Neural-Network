@@ -1,0 +1,47 @@
+In this neural network, I want to test my abilities in the field so far. These are the guidelines:
+	
+	Make a fully connected nueral network
+		(x1) Input Layer
+			(x1) Inputs
+		(x3) Hidden Layers
+			(x4) Nuerons per layer
+		(x1) Output Layer
+			(x1) Output
+	
+	Train the network
+		Use Stochastic Gradient Descent
+		Read .txt file for inputs
+		Output weights and cost function values to two .txt ouput files
+		Train to approach a function of f(x) = 3x^3 + x^2 + 5x + 3
+		Allow for test inputs by user and compare to the value of f(<input>)
+	
+	Further Research
+		Use OpenCV to make data tables
+		Use OpenCV to output images/charts of the weights
+		Add biases
+		Use inputs of bitmaps with values hidden in the image pixel values
+
+
+Learning Class
+	Cost Function
+	Find the gradient
+	Find the weight change
+	Compute the weight change
+
+This is the flow of the program:
+	Read the inputs
+	Create all the nuerons and set the input neurons to the inputs array
+	Create the connections among the neurons
+	Randomly initialize the weights
+
+Feedforward
+	Get the inputs
+	Create the connections
+		For every layer through layer 3
+			For every index per layer
+				Connect to every other neuron in the next layer
+				Randomize thhe weight in the interval (0, infinity)
+	Feedforward	
+		For each layer through layer 3
+			Fire input layer
+			Get the weighted sums for each neuron
