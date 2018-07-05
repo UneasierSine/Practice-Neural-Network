@@ -37,12 +37,6 @@ Neuron::~Neuron()
 {
 }
 
-void Neuron::activationFunction(double in)
-{
-	//Perform ReLU activation
-	output = fmin(0.0, in);
-}
-
 double Neuron::getInput()
 {
 	return input;
@@ -53,12 +47,23 @@ double Neuron::getOutput()
 	return output;
 }
 
+double Neuron::getError()
+{
+	return error;
+}
+
 void Neuron::setInput(double param)
 {
 	input = param;
+	output = fmin(0, input);
 }
 
 void Neuron::setOnput(double param)
 {
 	output = param;
+}
+
+void Neuron::setError(double param)
+{
+	error = param;
 }

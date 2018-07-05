@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="FeedForward.h" />
     <ClInclude Include="Neuron.h" />
     <ClInclude Include="NeuronConnection.h" />
     <ClInclude Include="stdafx.h" />
@@ -154,6 +155,7 @@
     <ClInclude Include="Training.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FeedForward.cpp" />
     <ClCompile Include="Neuron.cpp" />
     <ClCompile Include="NeuronConnection.cpp" />
     <ClCompile Include="Practice_Nueral_Network.cpp" />

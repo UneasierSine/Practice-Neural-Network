@@ -34,6 +34,16 @@ double NeuronConnection::getWeight()
 	return weight;
 }
 
+int NeuronConnection::getBeginIndex()
+{
+	return beginIndex;
+}
+
+int NeuronConnection::getEndIndex()
+{
+	return endIndex;
+}
+
 void NeuronConnection::setInput(double param)
 {
 	input = param;

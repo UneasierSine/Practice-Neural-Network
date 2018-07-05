@@ -18,6 +18,9 @@ class NeuronConnection
 		double getOutput();
 		double getWeight();
 
+		int getBeginIndex();
+		int getEndIndex();
+
 		void setInput(double param);
 		void setOutput(double param);
 		void setWeight(double param);

@@ -10,16 +10,18 @@ class Neuron
 	bool isInput = false;
 	bool isOutput = false;
 
+	double error = 0.0;
+
 	public:
 		Neuron(int layer, int rank);
 		~Neuron();
 
-		void activationFunction(double in);
-
 		double getInput();
 		double getOutput();
+		double getError();
 
 		void setInput(double param);
 		void setOnput(double param);
+		void setError(double param);
 };
 
