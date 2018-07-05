@@ -17,7 +17,6 @@ void FeedForward::weightedSumFirstLayer(vector<NeuronConnection> connections, Ne
 	for (NeuronConnection connect : connections)
 	{
 		output[counter].setInput(connect.getWeight() * input.getOutput());
-		cout << output[counter].getOutput() << endl;
 		counter++;
 	}
 }
@@ -55,5 +54,4 @@ void FeedForward::lastWeightedSumInput(vector<NeuronConnection> toOutput, vector
 		counter++;
 	}
 	output.setInput(sum);
-	cout << output.getOutput() << endl;
 }
