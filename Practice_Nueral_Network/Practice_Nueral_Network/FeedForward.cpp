@@ -37,7 +37,7 @@ void FeedForward::weightedSumInput(vector<NeuronConnection> connections, vector<
 			counter++;
 		}
 	}
-	cout << sum << endl;
+	cout << sum[0] << " " << sum[1] << " " << sum[2] << " " << sum[3] << endl;
 	output[0].setInput(sum[0]);
 	output[1].setInput(sum[1]);
 	output[2].setInput(sum[2]);
