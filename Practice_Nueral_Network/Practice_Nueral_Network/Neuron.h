@@ -21,7 +21,7 @@ class Neuron
 		double getError();
 
 		void setInput(double param);
-		void setOnput(double param);
+		void setOutput(double param);
 		void setError(double param);
 };
 

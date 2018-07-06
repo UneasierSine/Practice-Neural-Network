@@ -55,10 +55,10 @@ double Neuron::getError()
 void Neuron::setInput(double param)
 {
 	input = param;
-	output = fmin(0, input);
+	output = fmax(0, input);
 }
 
-void Neuron::setOnput(double param)
+void Neuron::setOutput(double param)
 {
 	output = param;
 }
