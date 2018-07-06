@@ -24,7 +24,5 @@ class NeuronConnection
 		void setInput(double param);
 		void setOutput(double param);
 		void setWeight(double param);
-
-		double calculatedOutput();
 };
 

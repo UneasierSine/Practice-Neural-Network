@@ -17,12 +17,12 @@ double Training::costFunctionError(double predictedVal, double actualVal)
 	return error;
 }
 
-double Training::weightGradient(Neuron start, Neuron end)
+double Training::weightGradient(Neuron &start, Neuron &end)
 {
 	return start.getOutput() * end.getError();
 }
 
-double Training::neuronOutputGradient(NeuronConnection connection, Neuron end)
+double Training::neuronOutputError(NeuronConnection &connection, Neuron &end)
 {
 	return connection.getWeight() * end.getError();
 }

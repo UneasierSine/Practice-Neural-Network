@@ -58,8 +58,3 @@ void NeuronConnection::setWeight(double param)
 {
 	weight = param;
 }
-
-double NeuronConnection::calculatedOutput()
-{
-	return weight * input;
-}
