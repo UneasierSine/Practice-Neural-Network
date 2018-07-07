@@ -22,7 +22,11 @@ double Training::weightGradient(Neuron &start, Neuron &end)
 	return start.getOutput() * end.getError();
 }
 
-double Training::neuronOutputError(NeuronConnection &connection, Neuron &end)
+void Training::neuronOutputError();
+
+void Training::neuronOutputError(Neuron &target, NeuronConnection &connection, Neuron &end)
 {
-	return connection.getWeight() * end.getError();
+	double activationGradient = 1.0;
+	if (target.getInput() <= 0.0) activationGradient = 0.0;
+	target.setError(connection.getWeight() * end.getError() * activationGradient);
 }

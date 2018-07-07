@@ -13,7 +13,7 @@ class Training
 
 		double costFunctionError(double predictedVal, double actualVal);
 		double weightGradient(Neuron &start, Neuron &end);
-		double neuronOutputError(NeuronConnection &connection, Neuron &end);
-
+		void errorOutputGradient(Neuron &neuron, double error);
+		void neuronOutputError(Neuron &target, NeuronConnection &connection, Neuron &end);
 };
 
