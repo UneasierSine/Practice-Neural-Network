@@ -13,7 +13,7 @@ Training::~Training()
 
 double Training::costFunctionError(double predictedVal, double actualVal)
 {
-	double error = (actualVal - predictedVal) * (actualVal - predictedVal);
+	double error = (actualVal - predictedVal);
 	return error;
 }
 
