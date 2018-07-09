@@ -6,7 +6,7 @@ In this neural network, I want to test my abilities in the field so far. These a
 		(x3) Hidden Layers
 			(x4) Nuerons per layer
 		(x1) Output Layer
-			(x1) Output
+			(x1) Output with linear output
 	
 	Train the network
 		Use Stochastic Gradient Descent

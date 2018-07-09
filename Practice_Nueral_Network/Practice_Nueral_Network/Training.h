@@ -13,7 +13,11 @@ class Training
 
 		double costFunctionError(double predictedVal, double actualVal);
 		double weightGradient(Neuron &start, Neuron &end);
-		void errorOutputGradient(Neuron &neuron, double error);
-		void neuronOutputError(Neuron &target, NeuronConnection &connection, Neuron &end);
+		void errorOutputGradient(Neuron &neuron, double actual, double predicted);
+		void errorsLastHidden(vector<Neuron> &layerLast, Neuron &output, vector<NeuronConnection> &connections);
+		void errorsHidden(vector<Neuron> &layer, vector<Neuron> &layerPlusOne, vector<NeuronConnection> &connections);
+		void modifyWeights(vector<Neuron> &beginLayer, vector<Neuron> &endLayer, vector<NeuronConnection> &connections);
+		void modifyLastWeights(vector<Neuron> &beginLayer, Neuron &outputNeuron, vector<NeuronConnection> &connections);
+		void modifyFirstWeights(Neuron &inputNeuron, vector<Neuron> &endLayer, vector<NeuronConnection> &connections);
 };
 
