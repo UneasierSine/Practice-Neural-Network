@@ -11,7 +11,7 @@ NeuronConnection::NeuronConnection(int layer1, int layer2, int index1, int index
 	beginIndex = index1;
 	endIndex = index2;
 
-	weight = ((double)rand()*(10 + 0.1) / (double)RAND_MAX + 0.1);
+	weight = ((long double)rand()*(2 + 0.1) / (long double)RAND_MAX + 0.1);
 }
 
 
@@ -19,17 +19,17 @@ NeuronConnection::~NeuronConnection()
 {
 }
 
-double NeuronConnection::getInput()
+long double NeuronConnection::getInput()
 {
 	return input;
 }
 
-double NeuronConnection::getOutput()
+long double NeuronConnection::getOutput()
 {
 	return output;
 }
 
-double NeuronConnection::getWeight()
+long double NeuronConnection::getWeight()
 {
 	return weight;
 }
@@ -44,17 +44,17 @@ int NeuronConnection::getEndIndex()
 	return endIndex;
 }
 
-void NeuronConnection::setInput(double param)
+void NeuronConnection::setInput(long double param)
 {
 	input = param;
 }
 
-void NeuronConnection::setOutput(double param)
+void NeuronConnection::setOutput(long double param)
 {
 	output = param;
 }
 
-void NeuronConnection::setWeight(double param)
+void NeuronConnection::setWeight(long double param)
 {
 	weight = param;
 }

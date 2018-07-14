@@ -37,33 +37,33 @@ Neuron::~Neuron()
 {
 }
 
-double Neuron::getInput()
+long double Neuron::getInput()
 {
 	return input;
 }
 
-double Neuron::getOutput()
+long double Neuron::getOutput()
 {
 	return output;
 }
 
-double Neuron::getError()
+long double Neuron::getError()
 {
 	return error;
 }
 
-void Neuron::setInput(double param)
+void Neuron::setInput(long double param)
 {
 	input = param;
 	output = fmax(0, input);
 }
 
-void Neuron::setOutput(double param)
+void Neuron::setOutput(long double param)
 {
 	output = param;
 }
 
-void Neuron::setError(double param)
+void Neuron::setError(long double param)
 {
 	error = param;
 }

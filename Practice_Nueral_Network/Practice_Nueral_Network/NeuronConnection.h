@@ -6,23 +6,23 @@ class NeuronConnection
 	int beginIndex = 0;
 	int endIndex = 0;
 
-	double weight = 0.0;
-	double input = 0.0;
-	double output = 0.0;
+	long double weight = 0.0;
+	long double input = 0.0;
+	long double output = 0.0;
 
 	public:
 		NeuronConnection(int layer1, int layer2, int index1, int index2);
 		~NeuronConnection();
 
-		double getInput();
-		double getOutput();
-		double getWeight();
+		long double getInput();
+		long double getOutput();
+		long double getWeight();
 
 		int getBeginIndex();
 		int getEndIndex();
 
-		void setInput(double param);
-		void setOutput(double param);
-		void setWeight(double param);
+		void setInput(long double param);
+		void setOutput(long double param);
+		void setWeight(long double param);
 };
 

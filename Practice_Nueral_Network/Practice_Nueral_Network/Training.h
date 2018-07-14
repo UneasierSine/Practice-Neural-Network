@@ -2,6 +2,7 @@
 #include "Neuron.h"
 #include "NeuronConnection.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -11,9 +12,9 @@ class Training
 		Training();
 		~Training();
 
-		double costFunctionError(double predictedVal, double actualVal);
-		double weightGradient(Neuron &start, Neuron &end);
-		void errorOutputGradient(Neuron &neuron, double actual, double predicted);
+		long double costFunctionError(long double predictedVal, long double actualVal);
+		long double weightGradient(Neuron &start, Neuron &end);
+		void errorOutputGradient(Neuron &neuron, long double actual, long double predicted);
 		void errorsLastHidden(vector<Neuron> &layerLast, Neuron &output, vector<NeuronConnection> &connections);
 		void errorsHidden(vector<Neuron> &layer, vector<Neuron> &layerPlusOne, vector<NeuronConnection> &connections);
 		void modifyWeights(vector<Neuron> &beginLayer, vector<Neuron> &endLayer, vector<NeuronConnection> &connections);

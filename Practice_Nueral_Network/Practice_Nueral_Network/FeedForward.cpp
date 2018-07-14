@@ -31,7 +31,7 @@ void FeedForward::weightedSumInput(vector<NeuronConnection> &connections, vector
 
 void FeedForward::lastWeightedSumInput(vector<NeuronConnection> &toOutput, vector<Neuron> &input, Neuron &output)
 {
-	static double sum;
+	static long double sum;
 	int counter = 0;
 	for (NeuronConnection outs : toOutput)
 	{

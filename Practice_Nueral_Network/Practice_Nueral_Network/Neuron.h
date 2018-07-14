@@ -1,8 +1,8 @@
 #pragma once
 class Neuron
 {
-	double input = 0.0;
-	double output = 0.0;
+	long double input = 0.0;
+	long double output = 0.0;
 
 	int layerNumber = 0;
 	int neuronIndex = 0;
@@ -10,18 +10,18 @@ class Neuron
 	bool isInput = false;
 	bool isOutput = false;
 
-	double error = 0.0;
+	long double error = 0.0;
 
 	public:
 		Neuron(int layer, int rank);
 		~Neuron();
 
-		double getInput();
-		double getOutput();
-		double getError();
+		long double getInput();
+		long double getOutput();
+		long double getError();
 
-		void setInput(double param);
-		void setOutput(double param);
-		void setError(double param);
+		void setInput(long double param);
+		void setOutput(long double param);
+		void setError(long double param);
 };
 
