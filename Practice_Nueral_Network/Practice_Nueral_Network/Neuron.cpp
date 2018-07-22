@@ -55,7 +55,8 @@ long double Neuron::getError()
 void Neuron::setInput(long double param)
 {
 	input = param;
-	output = fmax(0, input);
+	if (input > 0) output = input;
+	if (input <= 0) output = 0.00001 * input;
 }
 
 void Neuron::setOutput(long double param)
